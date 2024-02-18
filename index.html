@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <title>AI Poem Generator</title>
@@ -23,21 +25,14 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
+        <div class="hint">i.e: Flower, Paris or Cheese</div>
+        <div class="poem hidden" id="poem"></div>
       </main>
-      <br />
-      <br />
-      <div class="poem" id="poem">
-        "The More Loving One" by W.H. Auden <br />
-        Were all stars to disappear or die, <br />
-        I should learn to look at an empty sky,<br />
-        And feel its total dark sublime, <br />
-        Though this might take me a little time. <br />
-      </div>
     </div>
-    <br />
 
     <footer>
       This AI project was coded by
